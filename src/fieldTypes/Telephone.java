@@ -1,6 +1,39 @@
 package fieldTypes;
 
 public class Telephone {
+
+    public String number;
+
+    public static int quantity;
+
+    public static double total;
+
+    static {
+        quantity = 250;
+        total = 15658.92;
+    }
+
+    public void setNumber(String number){
+        this.number = number;
+    }
+    public String getNumber(){
+        return this.number;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("telephone.total = " + Telephone.total);
+        Telephone telephone = new Telephone();
+        System.out.println("After object Telephone.total = "+telephone.total);
+
+        telephone.setNumber("555-4536768");
+        System.out.println("telephone.getNumber() = " + telephone.getNumber());
+
+        System.out.println("telephone.total = " + Telephone.total);
+
+
+    }
+
 }
 
 /*
