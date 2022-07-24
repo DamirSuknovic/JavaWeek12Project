@@ -19,3 +19,4 @@ name, jobTitle, ID, salary
     add a default constructor with no fields
 
     toString() method will print out the fields
+    - instance method (
